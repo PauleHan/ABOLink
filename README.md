@@ -2,7 +2,7 @@ ABOLink v.1.03 - Руководство
 =======
 ###### Постоянный адрес документации: [paulehan.github.io/ABOLink/](http://paulehan.github.io/ABOLink/)
 
-Поддержка: [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/PauleHan/ABOLink?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/PauleHan/ABOLink?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 #### Описание
 - Скрипт `ABOLink` возвращает HTML код ссылки и баннера для партнерского сайта.
