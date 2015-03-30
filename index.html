@@ -1,39 +1,44 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>ABOLink by PauleHan</title>
-
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <title>ABOLink by PauleHan</title>
   </head>
+
   <body>
-    <div class="wrapper">
-      <header>
-        <h1>ABOLink</h1>
-        <p>ABOLink</p>
+    <div id="container">
+      <div class="inner">
 
-        <p class="view"><a href="https://github.com/PauleHan/ABOLink">View the Project on GitHub <small>PauleHan/ABOLink</small></a></p>
+        <header>
+          <h1>ABOLink</h1>
+          <h2>ABOLink</h2>
+        </header>
 
+        <section id="downloads" class="clearfix">
+          <a href="https://github.com/PauleHan/ABOLink/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
+          <a href="https://github.com/PauleHan/ABOLink/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
+          <a href="https://github.com/PauleHan/ABOLink" id="view-on-github" class="button"><span>View on GitHub</span></a>
+        </section>
 
-        <ul>
-          <li><a href="https://github.com/PauleHan/ABOLink/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/PauleHan/ABOLink/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/PauleHan/ABOLink">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <h1>
+        <hr>
+
+        <section id="main_content">
+          <h1>
 <a id="abolink-v103---Руководство" class="anchor" href="#abolink-v103---%D0%A0%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%BE" aria-hidden="true"><span class="octicon octicon-link"></span></a>ABOLink v.1.03 - Руководство</h1>
 
 <h6>
 <a id="Постоянный-адрес-документации-paulehangithubioabolink" class="anchor" href="#%D0%9F%D0%BE%D1%81%D1%82%D0%BE%D1%8F%D0%BD%D0%BD%D1%8B%D0%B9-%D0%B0%D0%B4%D1%80%D0%B5%D1%81-%D0%B4%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%D1%86%D0%B8%D0%B8-paulehangithubioabolink" aria-hidden="true"><span class="octicon octicon-link"></span></a>Постоянный адрес документации: <a href="http://paulehan.github.io/ABOLink/">paulehan.github.io/ABOLink/</a>
 </h6>
+
+<p><a href="https://gitter.im/PauleHan/ABOLink?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge"><img src="https://badges.gitter.im/Join%20Chat.svg" alt="Gitter"></a></p>
 
 <h4>
 <a id="Описание" class="anchor" href="#%D0%9E%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5" aria-hidden="true"><span class="octicon octicon-link"></span></a>Описание</h4>
@@ -65,9 +70,9 @@
 Установите данный код перед выводом HTML кода ссылки или баннера:</li>
 </ul>
 
-<div class="highlight highlight-php"><pre><span class="pl-pse">&lt;?php</span><span class="pl-s2"></span>
-<span class="pl-s2">    <span class="pl-k">include</span>(<span class="pl-s1"><span class="pl-pds">"</span>ABOLink/ABOLink.php<span class="pl-pds">"</span></span>);</span>
-<span class="pl-s2"></span><span class="pl-pse"><span class="pl-s2">?</span>&gt;</span></pre></div>
+<div class="highlight highlight-php"><pre><span class="pl-pse">&lt;?php</span><span class="pl-s1"></span>
+<span class="pl-s1">    <span class="pl-k">include</span>(<span class="pl-s"><span class="pl-pds">"</span>ABOLink/ABOLink.php<span class="pl-pds">"</span></span>);</span>
+<span class="pl-s1"></span><span class="pl-pse"><span class="pl-s1">?</span>&gt;</span></pre></div>
 
 <h4>
 <a id="Вывод-данных" class="anchor" href="#%D0%92%D1%8B%D0%B2%D0%BE%D0%B4-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85" aria-hidden="true"><span class="octicon octicon-link"></span></a>Вывод данных</h4>
@@ -76,11 +81,11 @@
 <li>Для вывода ссылки скрипта <code>ABOLink</code>, необходимо в блок установить следующий PHP код:</li>
 </ul>
 
-<div class="highlight highlight-php"><pre><span class="pl-s2"><span class="pl-k">&lt;</span>?<span class="pl-c1">php</span> ABOLink(<span class="pl-s1"><span class="pl-pds">'</span>ANCOR<span class="pl-pds">'</span></span>); </span><span class="pl-pse"><span class="pl-s2">?</span>&gt;</span></pre></div>
+<div class="highlight highlight-php"><pre><span class="pl-s1"><span class="pl-k">&lt;</span>?<span class="pl-c1">php</span> ABOLink(<span class="pl-s"><span class="pl-pds">'</span>ANCOR<span class="pl-pds">'</span></span>); </span><span class="pl-pse"><span class="pl-s1">?</span>&gt;</span></pre></div>
 
 <p>В ответ на сайт партнера будет возвращено HTML код ссылки. Пример:</p>
 
-<div class="highlight highlight-html"><pre>&lt;<span class="pl-ent">a</span> <span class="pl-e">href</span>=<span class="pl-s1"><span class="pl-pds">"</span>http://abo.ua/instrument/<span class="pl-pds">"</span></span> <span class="pl-e">title</span>=<span class="pl-s1"><span class="pl-pds">"</span>Инструмент<span class="pl-pds">"</span></span> <span class="pl-e">target</span>=<span class="pl-s1"><span class="pl-pds">"</span>_blank<span class="pl-pds">"</span></span>&gt;
+<div class="highlight highlight-html"><pre>&lt;<span class="pl-ent">a</span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>http://abo.ua/instrument/<span class="pl-pds">"</span></span> <span class="pl-e">title</span>=<span class="pl-s"><span class="pl-pds">"</span>Инструмент<span class="pl-pds">"</span></span> <span class="pl-e">target</span>=<span class="pl-s"><span class="pl-pds">"</span>_blank<span class="pl-pds">"</span></span>&gt;
     Инструмент
 &lt;/<span class="pl-ent">a</span>&gt;</pre></div>
 
@@ -88,12 +93,12 @@
 <li>Для вывода банера скрипта <code>ABOLink</code>, необходимо в блок установить следующий PHP код:</li>
 </ul>
 
-<div class="highlight highlight-php"><pre><span class="pl-s2"><span class="pl-k">&lt;</span>?<span class="pl-c1">php</span> ABOLink(<span class="pl-s1"><span class="pl-pds">'</span>BANNER<span class="pl-pds">'</span></span>); </span><span class="pl-pse"><span class="pl-s2">?</span>&gt;</span></pre></div>
+<div class="highlight highlight-php"><pre><span class="pl-s1"><span class="pl-k">&lt;</span>?<span class="pl-c1">php</span> ABOLink(<span class="pl-s"><span class="pl-pds">'</span>BANNER<span class="pl-pds">'</span></span>); </span><span class="pl-pse"><span class="pl-s1">?</span>&gt;</span></pre></div>
 
 <p>В ответ на сайт партнера будет возвращено HTML код баннера. Пример:</p>
 
-<div class="highlight highlight-html"><pre>&lt;<span class="pl-ent">a</span> <span class="pl-e">href</span>=<span class="pl-s1"><span class="pl-pds">"</span>http://abo.ua/instrument/<span class="pl-pds">"</span></span> <span class="pl-e">title</span>=<span class="pl-s1"><span class="pl-pds">"</span>Инструмент<span class="pl-pds">"</span></span> <span class="pl-e">target</span>=<span class="pl-s1"><span class="pl-pds">"</span>_blank<span class="pl-pds">"</span></span>&gt;
-    &lt;<span class="pl-ent">img</span> <span class="pl-e">src</span>=<span class="pl-s1"><span class="pl-pds">"</span>http://firepic.org/images/2014-09/05/6pxv59onm2ph.jpg<span class="pl-pds">"</span></span> <span class="pl-e">alt</span>=<span class="pl-s1"><span class="pl-pds">"</span>Инструмент<span class="pl-pds">"</span></span>/&gt;
+<div class="highlight highlight-html"><pre>&lt;<span class="pl-ent">a</span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>http://abo.ua/instrument/<span class="pl-pds">"</span></span> <span class="pl-e">title</span>=<span class="pl-s"><span class="pl-pds">"</span>Инструмент<span class="pl-pds">"</span></span> <span class="pl-e">target</span>=<span class="pl-s"><span class="pl-pds">"</span>_blank<span class="pl-pds">"</span></span>&gt;
+    &lt;<span class="pl-ent">img</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>http://firepic.org/images/2014-09/05/6pxv59onm2ph.jpg<span class="pl-pds">"</span></span> <span class="pl-e">alt</span>=<span class="pl-s"><span class="pl-pds">"</span>Инструмент<span class="pl-pds">"</span></span>/&gt;
 &lt;/<span class="pl-ent">a</span>&gt;</pre></div>
 
 <ul>
@@ -110,24 +115,24 @@
 <p>Узнать кодировку сайта вывода данных HTML можно в "голове" любой страницы:</p>
 
 <div class="highlight highlight-html"><pre>&lt;<span class="pl-ent">head</span>&gt;
-  &lt;<span class="pl-ent">meta</span> <span class="pl-e">http-equiv</span>=<span class="pl-s1"><span class="pl-pds">"</span>Content-Type<span class="pl-pds">"</span></span> <span class="pl-e">content</span>=<span class="pl-s1"><span class="pl-pds">"</span>text/html; charset=windows-1251<span class="pl-pds">"</span></span> /&gt;
+  &lt;<span class="pl-ent">meta</span> <span class="pl-e">http-equiv</span>=<span class="pl-s"><span class="pl-pds">"</span>Content-Type<span class="pl-pds">"</span></span> <span class="pl-e">content</span>=<span class="pl-s"><span class="pl-pds">"</span>text/html; charset=windows-1251<span class="pl-pds">"</span></span> /&gt;
   ...
 &lt;/<span class="pl-ent">head</span>&gt;</pre></div>
 
 <p>Если Ваш сайт использует другую кодировку, к примеру: <code>windows-1251</code> - необходимо в PHP код добавить параметр кодировки.
 К примеру, для сайта с HTML кодировкой <code>windows-1251</code>:</p>
 
-<div class="highlight highlight-php"><pre><span class="pl-s2"><span class="pl-k">&lt;</span>?<span class="pl-c1">php</span> ABOLink(<span class="pl-s1"><span class="pl-pds">'</span>ANCOR<span class="pl-pds">'</span></span>, <span class="pl-s1"><span class="pl-pds">'</span>windows-1251<span class="pl-pds">'</span></span>); </span><span class="pl-pse"><span class="pl-s2">?</span>&gt;</span></pre></div>
+<div class="highlight highlight-php"><pre><span class="pl-s1"><span class="pl-k">&lt;</span>?<span class="pl-c1">php</span> ABOLink(<span class="pl-s"><span class="pl-pds">'</span>ANCOR<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>windows-1251<span class="pl-pds">'</span></span>); </span><span class="pl-pse"><span class="pl-s1">?</span>&gt;</span></pre></div>
 
-<div class="highlight highlight-php"><pre><span class="pl-s2"><span class="pl-k">&lt;</span>?<span class="pl-c1">php</span> ABOLink(<span class="pl-s1"><span class="pl-pds">'</span>BANNER<span class="pl-pds">'</span></span>, <span class="pl-s1"><span class="pl-pds">'</span>windows-1251<span class="pl-pds">'</span></span>); </span><span class="pl-pse"><span class="pl-s2">?</span>&gt;</span></pre></div>
+<div class="highlight highlight-php"><pre><span class="pl-s1"><span class="pl-k">&lt;</span>?<span class="pl-c1">php</span> ABOLink(<span class="pl-s"><span class="pl-pds">'</span>BANNER<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>windows-1251<span class="pl-pds">'</span></span>); </span><span class="pl-pse"><span class="pl-s1">?</span>&gt;</span></pre></div>
 
 <p>По умолчанию PHP код выводит данные в кодировке <code>UTF-8</code>. Если Ваш сайт использует кодировку <code>UTF-8</code>, параметр кодировки можно не указывать.</p>
 
 <p>Пример вызова PHP кода с идентичной кодировкой <code>UTF-8</code>:</p>
 
-<div class="highlight highlight-php"><pre><span class="pl-s2"><span class="pl-k">&lt;</span>?<span class="pl-c1">php</span> ABOLink(<span class="pl-s1"><span class="pl-pds">'</span>ANCOR<span class="pl-pds">'</span></span>); </span><span class="pl-pse"><span class="pl-s2">?</span>&gt;</span></pre></div>
+<div class="highlight highlight-php"><pre><span class="pl-s1"><span class="pl-k">&lt;</span>?<span class="pl-c1">php</span> ABOLink(<span class="pl-s"><span class="pl-pds">'</span>ANCOR<span class="pl-pds">'</span></span>); </span><span class="pl-pse"><span class="pl-s1">?</span>&gt;</span></pre></div>
 
-<div class="highlight highlight-php"><pre><span class="pl-s2"><span class="pl-k">&lt;</span>?<span class="pl-c1">php</span> ABOLink(<span class="pl-s1"><span class="pl-pds">'</span>ANCOR<span class="pl-pds">'</span></span>, <span class="pl-s1"><span class="pl-pds">'</span>utf-8<span class="pl-pds">'</span></span>); </span><span class="pl-pse"><span class="pl-s2">?</span>&gt;</span></pre></div>
+<div class="highlight highlight-php"><pre><span class="pl-s1"><span class="pl-k">&lt;</span>?<span class="pl-c1">php</span> ABOLink(<span class="pl-s"><span class="pl-pds">'</span>ANCOR<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>utf-8<span class="pl-pds">'</span></span>); </span><span class="pl-pse"><span class="pl-s1">?</span>&gt;</span></pre></div>
 
 <h4>
 <a id="Поддержка" class="anchor" href="#%D0%9F%D0%BE%D0%B4%D0%B4%D0%B5%D1%80%D0%B6%D0%BA%D0%B0" aria-hidden="true"><span class="octicon octicon-link"></span></a>Поддержка</h4>
@@ -135,18 +140,18 @@
 <ul>
 <li>Если у Вас возникли вопросы по внедрению скрипта ABOLink или другие вопросы технического характера напишите нам: <a href="mailto:WebHelp@abo.ua">WebHelp@abo.ua</a>
 </li>
+<li><a href="https://gitter.im/PauleHan/ABOLink?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge"><img src="https://badges.gitter.im/Join%20Chat.svg" alt="Gitter"></a></li>
+<li><a href="https://github.com/PauleHan/ABOLink/wiki">WIKI</a></li>
 </ul>
+        </section>
 
-<h1>
-<a id="wiki" class="anchor" href="#wiki" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="https://github.com/PauleHan/ABOLink/wiki">WIKI</a>
-</h1>
-      </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/PauleHan">PauleHan</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
+        <footer>
+          ABOLink is maintained by <a href="https://github.com/PauleHan">PauleHan</a><br>
+          This page was generated by <a href="https://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
+        </footer>
+
+        
+      </div>
     </div>
-    <script src="javascripts/scale.fix.js"></script>
-    
   </body>
 </html>
